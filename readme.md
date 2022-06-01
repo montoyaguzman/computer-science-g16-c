@@ -26,4 +26,21 @@ Secuencia de instruccions o pasos que van en ordener para resolver un problema.
 * Lenguajes de programación: .
 * Prueba de escritorio: .
 
+
+
+## Notas adicionales
+
+
+### Git
+
+```
+git branch // ver rama en la rama en la que estan
+git branch nuevaRama // crea una rama nueva
+git checkout nuevaRama // cambia a una rama con el nombre nuevaRama
+git checkout -b nuevaRama // crear y cambiarme a una nueva rama
+git switch -c nuevaRama // crear y cambiarme a una nueva rama
+git branch -D nombreRama // eliminar una rama 
+```
+
+
 Simbologia del diagrama del flujo
