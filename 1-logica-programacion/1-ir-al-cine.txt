@@ -6,7 +6,6 @@ no -> END
 SÌ -> 
 Agregar boletos al carrito
 
-
 Revisar si cuenta bancaria
 Tengo suficiente dinero?
 
@@ -18,13 +17,13 @@ Pedir Uber
 
 Llegar al cine
 ------------------------------------------------
-1.-øTengo tiempo?
+1.-Tengo tiempo?
 
 2.-øTengo dinero?
 
 3.-Ver cartelera
 
-4.-øMe llama la atenciÛn alguna pelicula?
+4.-Me llama la atenciÛn alguna pelicula?
 
 5.-Debes ir al cine
 
@@ -50,7 +49,7 @@ Llegar al cine
 -------------------------------------------------
 1.- Buscar en lÌnea el cine de mi preferencia2.- Ver que pelÌculas hay en la cartelera 
 
-3.  øLa pelicula es de mi agrado?
+3.  La pelicula es de mi agrado?
 * 
 	Si 
 	sÌ: Verificar horarios. 

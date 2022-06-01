@@ -20,16 +20,13 @@ Secuencia de instruccions o pasos que van en ordener para resolver un problema.
 
 ### Formas de representar un algoritmo
 
-* Lenguaje del natural: .
-* Diagrama de flujo: .
-* Pseudocódigo: .
+* Lenguaje del natural: Expresar un problema con nuestras propias palabras y sin usar tecnicismos de desarrollo. Es el lenguaje con el que nos expresamos comúnmente.
+* Diagrama de flujo: Forma gráfica de representar un algoritmo. Tambien es util para documentar procesos de un sistema.
+* Pseudocódigo: Lenguaje hibrido entre el natural y el codigo de programacion, utiliza ciertas convenciones de programacion pero sigue siendo entendible para las personas.
 * Lenguajes de programación: .
 * Prueba de escritorio: .
 
-
-
 ## Notas adicionales
-
 
 ### Git
 
@@ -41,6 +38,5 @@ git checkout -b nuevaRama // crear y cambiarme a una nueva rama
 git switch -c nuevaRama // crear y cambiarme a una nueva rama
 git branch -D nombreRama // eliminar una rama 
 ```
-
 
 Simbologia del diagrama del flujo
