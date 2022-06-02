@@ -37,6 +37,16 @@ git checkout nuevaRama // cambia a una rama con el nombre nuevaRama
 git checkout -b nuevaRama // crear y cambiarme a una nueva rama
 git switch -c nuevaRama // crear y cambiarme a una nueva rama
 git branch -D nombreRama // eliminar una rama 
+git fetch && git checkout develop // obtener los cambios de una rama remota y cambiarse a esa rama
+git pull origin develop // bajar cambios de una rama remota a una local (cuando ya existe)
+git rm --cached . -r // actualiza la cache de git
 ```
+
+
+
+[Gitignore generator](https://www.toptal.com/developers/gitignore)
+
+
+
 
 Simbologia del diagrama del flujo

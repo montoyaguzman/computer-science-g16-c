@@ -1,0 +1,4 @@
+.DS_Store
+archivo.mp3
+*.log
+node_modules/
