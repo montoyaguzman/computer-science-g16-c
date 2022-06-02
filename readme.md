@@ -18,13 +18,29 @@ Es un razonamiento de las ideas, la forma en que se desarrollan de una manera co
 
 Secuencia de instruccions o pasos que van en ordener para resolver un problema.
 
-### Formas de representar un algoritmo
+### Representaciones de un algoritmo
 
-* Lenguaje del natural: Expresar un problema con nuestras propias palabras y sin usar tecnicismos de desarrollo. Es el lenguaje con el que nos expresamos comúnmente.
-* Diagrama de flujo: Forma gráfica de representar un algoritmo. Tambien es util para documentar procesos de un sistema.
-* Pseudocódigo: Lenguaje hibrido entre el natural y el codigo de programacion, utiliza ciertas convenciones de programacion pero sigue siendo entendible para las personas.
-* Lenguajes de programación: .
-* Prueba de escritorio: .
+#### Lenguaje del natural
+
+Expresar un problema con nuestras propias palabras y sin usar tecnicismos de desarrollo. Es el lenguaje con el que nos expresamos comúnmente.
+
+#### Diagrama de flujo
+
+Forma gráfica de representar un algoritmo. Tambien es util para documentar procesos de un sistema.
+
+#### Pseudocódigo
+
+Lenguaje hibrido entre el natural y el codigo de programacion, utiliza ciertas convenciones de programacion pero sigue siendo entendible para las personas.
+
+#### Código
+
+Resolver el problema mediante algín lenguaje de programación.
+
+#### Prueba de escritorio
+
+Es probar mediante valores reales si nuestro algoritmo soluciona correctamente el problema.
+
+Simbologia del diagrama del flujo
 
 ## Notas adicionales
 
@@ -44,9 +60,6 @@ git rm --cached . -r // actualiza la cache de git
 
 
 
+### Herramientas
+
 [Gitignore generator](https://www.toptal.com/developers/gitignore)
-
-
-
-
-Simbologia del diagrama del flujo
