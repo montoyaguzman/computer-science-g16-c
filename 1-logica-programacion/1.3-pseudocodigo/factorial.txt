@@ -49,7 +49,7 @@ Inicio
                     resultado = numeroEntrada *índice
                     inidce = indice -1
 
-                    Imprime resultado
+        Imprime resultado
 Fin
 
 
