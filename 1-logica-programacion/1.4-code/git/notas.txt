@@ -1,0 +1,12 @@
+GIT LOCAL
+git status
+git add .
+git branch
+git restore --staged namefile.txt
+git commit -m "tipoCommit: mi mensaje"git push origin develop
+
+GIT REMOTO
+git remote -v
+git push origin rama
+git pull origin rama
+git fetch && git checkout origin newRama
