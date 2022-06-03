@@ -71,7 +71,9 @@ do {
   // razon de cambio
   k++;
 } while(k <= 20) // condicion
-// se pone 2 veces porque el ciclo lo recorre 20 veces
+// La instrucción estaba antes de hacer de la comparación, 
+// por eso imprimió todas las veces, tanto cuando era 
+// para como cuando era impar
 
 // Tipado fuerte vs tipado debil
 // int numero = 7; vs var numero = 7;
