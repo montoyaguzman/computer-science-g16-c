@@ -4,7 +4,7 @@
 
 ### Lógica
 
-Es un razonamiento de las ideas, la forma en que se desarrollan de una manera coherente, sin contradicciones y explicitamente.
+Es un razonamiento en que las ideas se desarrollan en forma coherente, sin contradicciones (entre ellas) y explicitamente.
 
 ### **Fases del análisis de un problema**
 
@@ -57,8 +57,6 @@ git fetch && git checkout develop // obtener los cambios de una rama remota y ca
 git pull origin develop // bajar cambios de una rama remota a una local (cuando ya existe)
 git rm --cached . -r // actualiza la cache de git
 ```
-
-
 
 ### Herramientas
 
