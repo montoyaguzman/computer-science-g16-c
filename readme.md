@@ -111,7 +111,30 @@ Es el estándar que la empresa del mismo nombre definió para JavaScript en el a
 
 ## Notas adicionales
 
-### Git
+### Git comando indispensables
+
+#### Estado del repo / commits
+
+#### Local
+
+```
+git status
+git add .
+git branch
+git restore --staged namefile.txt
+git commit -m "tipoCommit: mi mensaje"git push origin develop
+```
+
+#### Remoto
+
+```
+git remote -v
+git push origin rama
+git pull origin rama
+git fetch && git checkout origin newRama
+```
+
+### Administración de ramas
 
 ```
 # ver estado del repo
@@ -151,20 +174,21 @@ git rm --cached . -r
 git push origin develop
 ```
 
+
 ### Herramientas
 
 #### Plataformas para diseñar diagramas
 
 * [Lucidchart](https://lucid.app/)
 * [Draw.io](https://app.diagrams.net/)
-* 
+* [Pseint](http://pseint.sourceforge.net/)
 
 #### Plataformas para prácticas lógica
 
 * [Hacker rank.](https://www.hackerrank.com/)
 * [Codewars.](https://www.codewars.com/)
 * [CodePen.](https://codepen.io/)
+* [Codesignal.](https://codesignal.com/)
 
-#### Git
 
 [Gitignore generator](https://www.toptal.com/developers/gitignore)
