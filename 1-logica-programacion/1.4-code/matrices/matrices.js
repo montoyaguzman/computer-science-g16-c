@@ -32,19 +32,19 @@ for (var i = 0; i < matrizA.length; i++) {
   for (var j = 0; j < matrizA.length; j++) {
     console.log("matrizA: ", matrizA[i][j]);
     // i=0, j=0, j (0) < matrizA.length (3) true
-    // i=0, j=1, j (1) < matrizA.length (3) true 
-    // i=0, j=2, j (2) < matrizA.length (3) true
-    // i=0, j=3, j (3)< matrizA.length (3) false
+    //      j=1, j (1) < matrizA.length (3) true 
+    //      j=2, j (2) < matrizA.length (3) true
+    //      j=3, j (3)< matrizA.length (3) false
     
     // i=1, j=0, j (0) < matrizA.length (3) true
-    // i=1, j=1, j (1) < matrizA.length (3) true 
-    // i=1, j=2, j (2) < matrizA.length (3) true
-    // i=1, j=3, j (3)< matrizA.length (3) false
+    //      j=1, j (1) < matrizA.length (3) true 
+    //      j=2, j (2) < matrizA.length (3) true
+    //      j=3, j (3)< matrizA.length (3) false
     
     // i=2, j=0, j (0) < matrizA.length (3) true
-    // i=2, j=1, j (1) < matrizA.length (3) true 
-    // i=2, j=2, j (2) < matrizA.length (3) true
-    // i=2, j=3, j (3)< matrizA.length (3) false
+    //      j=1, j (1) < matrizA.length (3) true 
+    //      j=2, j (2) < matrizA.length (3) true
+    //      j=3, j (3)< matrizA.length (3) false
   }
   // i++
 }
