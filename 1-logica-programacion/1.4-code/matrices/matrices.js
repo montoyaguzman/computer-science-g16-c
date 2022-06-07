@@ -35,7 +35,6 @@ for (var i = 0; i < matrizA.length; i++) {
     //      j=1, j (1) < matrizA.length (3) true 
     //      j=2, j (2) < matrizA.length (3) true
     //      j=3, j (3)< matrizA.length (3) false
-    
     // i=1, j=0, j (0) < matrizA.length (3) true
     //      j=1, j (1) < matrizA.length (3) true 
     //      j=2, j (2) < matrizA.length (3) true
@@ -52,14 +51,17 @@ for (var i = 0; i < matrizA.length; i++) {
 // SUMA
 console.log("matrizA: ", matrizA);
 console.log("matrizB: ", matrizB);
+
+// debugger
 for (var i = 0; i < matrizA.length; i++) {
     for (var j = 0; j < matrizA.length; j++) {
+      // console.log("matrizA: ", matrizA[i][j]);
       matrizC[i][j] = matrizA[i][j] + matrizB[i][j];
     }
 }
 console.log("matrizC (suma): ", matrizC);
 
-// RESTA
+// // RESTA
 console.log("matrizA: ", matrizA);
 console.log("matrizB: ", matrizB);
 for (var i = 0; i < matrizA.length; i++) {
@@ -69,12 +71,12 @@ for (var i = 0; i < matrizA.length; i++) {
 }
 console.log("matrizD (resta): ", matrizD);
 
-/**
- * REGLAS DE LA MULTIPLICACION DE MATRICES
- * matrizE[filasMatrizA][columnasMatrizB]
- * Solo se puede multiplicar matrizA y matrizB si columnasMatrizA === filasMatrizB
- * matrizE[i][j] = ( matrizA[0][0] * matrizB[0][0] ) + ( matrizA[0][1] * matrizB[1][0] ) + ( matrizA[0][2] * matrizB[2][0] )  
- */
+// /**
+//  * REGLAS DE LA MULTIPLICACION DE MATRICES
+//  * matrizE[filasMatrizA][columnasMatrizB]
+//  * Solo se puede multiplicar matrizA y matrizB si columnasMatrizA === filasMatrizB
+//  * matrizE[i][j] = ( matrizA[0][0] * matrizB[0][0] ) + ( matrizA[0][1] * matrizB[1][0] ) + ( matrizA[0][2] * matrizB[2][0] )  
+//  */
  console.log("matrizA: ", matrizA);
  console.log("matrizB: ", matrizB);
  for (var i = 0; i < matrizA.length; i++) {
@@ -88,5 +90,4 @@ console.log("matrizD (resta): ", matrizD);
        }
      }
  }
- 
  console.log("matrizE (multiplicacion): ", matrizE);
