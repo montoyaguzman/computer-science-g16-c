@@ -80,10 +80,6 @@ Resolver el problema mediante algín lenguaje de programación.
 
 Es probar mediante valores reales si nuestro algoritmo soluciona correctamente el problema.
 
-
-
-
-
 ### ECMAScript
 
 Es el estándar que la empresa del mismo nombre definió para JavaScript en el año 2015 (ES6) y encarga de regir como debe ser interpretado y cómo debe funcionar el lenguaje JavaScript.
@@ -108,58 +104,47 @@ Es el estándar que la empresa del mismo nombre definió para JavaScript en el a
 * RegExp.
 * Métodos de arreglos (push, slice, splice, indexOf, includes, find, findIndex, map, filter, reduce, reverse, forEach).
 
-
 ## Notas adicionales
 
-### Git comando indispensables
+### Comandos Git
 
 #### Estado del repo / commits
 
 #### Local
 
 ```
+# ver estado del repo
 git status
+
+# ver historial de commits
+git log --oneline
+```
+
+#### Commits / Stage
+
+```
+# agregar al staging area
 git add .
-git branch
+
+# quitar del stagin area
 git restore --staged namefile.txt
-git commit -m "tipoCommit: mi mensaje"git push origin develop
+
+# commits
+git commit -m "tipoCommit: mi mensaje"
+
 ```
 
 #### Remoto
 
 ```
+# ver los repos remotos a los que esta conectado el repo local
 git remote -v
-git push origin rama
+
+# bajar cambios
 git pull origin rama
-git fetch && git checkout origin newRama
-```
 
-### Administración de ramas
-
-```
-# ver estado del repo
-git status
-
-# ver estado de commits
-git log --oneline
-
-# ver rama en la rama en la que estan
-git branch 
-
-# crea una rama nueva
-git branch nuevaRama 
-
-# cambia a una rama con el nombre nuevaRama
-git checkout nuevaRama
-
-# crear y cambiarme a una nueva rama
-git checkout -b nuevaRama
-
-# crear y cambiarme a una nueva rama
-git switch -c nuevaRama 
-
-# eliminar una rama
-git branch -D nombreRama 
+# subir cambios
+git push origin rama
 
 # obtener los cambios de una rama remota y cambiarse a esa rama
 git fetch && git checkout develop
@@ -167,28 +152,103 @@ git fetch && git checkout develop
 #  bajar cambios de una rama remota a una local (cuando ya existe)
 git pull origin develop
 
-# actualiza la cache de git
-git rm --cached . -r 
-
 # subir cambios
 git push origin develop
+
+```
+
+#### Administración de ramas
+
+```
+# ver rama en la que se encuentra el head
+git branch 
+
+# crea una rama nueva
+git branch nombreNuevaRama 
+
+# cambiarse a una rama con el nombre nombreRama
+git checkout nombreRama
+
+# crear y cambiarse a una nueva rama
+git checkout -b nombreNuevaRama
+
+# crear y cambiarse a una nueva rama
+git switch -c nombreNuevaRama 
+
+# eliminar una rama
+git branch -D nombreRama
+
+```
+
+#### Otro comandos
+
+```
+# actualiza la cache de git para que tome ciertos cambios (.gitignore)
+git rm --cached . r
+
+# stash
+git stash
+
+# unstash
+git stash pop
 ```
 
 
+### Areas de estudio
+
+#### Ingeniería de software
+
+Es una área que estudia la creación y calidad del software.
+
+El ciclo de vida del software, diseño de diagramas, documentación del software son algunos de los topicos de está rama.
+
+**Metodologías de desarrollo de software**
+
+* Waterfall.
+* Metodologías ágiles (Extreme programming, Scrum, Kanan, etc.).
+
+#### Testing
+
+Es una área que se encarga de la automatización de pruebas del código.
+
+Las pruebas es un proceso de evaluar un producto, mediante exploración y experimentación.
+
+Entre menos entendemos un producto, tendrá mayores errores.
+
+**Motivos para probar**
+
+* Reducir costos.
+* Cuidar el prestigio
+* Mejoran la calidad de funcionalidad.
+* Minimizan la posibilidad de malas experiencias de usuario.
+
+**Por qué no se hacen siempre**
+
+* No son parte de la solución.
+* No se entrega evidencia al cliente.
+* Pueden ser difíciles de mantener.
+* No hay tiempo o conocimiento.
+
+**Metodologías testing**
+
+* TDD.
+* BDD.
+
 ### Herramientas
 
-#### Plataformas para diseñar diagramas
+#### Diseñar diagramas
 
 * [Lucidchart](https://lucid.app/)
 * [Draw.io](https://app.diagrams.net/)
 * [Pseint](http://pseint.sourceforge.net/)
 
-#### Plataformas para prácticas lógica
+#### Prácticar lógica
 
 * [Hacker rank.](https://www.hackerrank.com/)
 * [Codewars.](https://www.codewars.com/)
 * [CodePen.](https://codepen.io/)
 * [Codesignal.](https://codesignal.com/)
 
+#### Otras herramientas online
 
 [Gitignore generator](https://www.toptal.com/developers/gitignore)
