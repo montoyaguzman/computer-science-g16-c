@@ -110,8 +110,6 @@ Es el estándar que la empresa del mismo nombre definió para JavaScript en el a
 
 #### Estado del repo / commits
 
-#### Local
-
 ```
 # ver estado del repo
 git status
@@ -193,8 +191,8 @@ git stash
 git stash pop
 ```
 
+### Áreas de estudio
 
-### Areas de estudio
 
 #### Ingeniería de software
 
