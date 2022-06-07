@@ -16,6 +16,17 @@ var matrizC = [
     [0, 0, 0],
 ];
 
+var matrizD = [
+    [0, 0, 0],
+    [0, 0, 0],
+    [0, 0, 0],
+];
+
+var matrizE = [
+    [0, 0, 0],
+    [0, 0, 0],
+    [0, 0, 0],
+];
 
 for (var i = 0; i < matrizA.length; i++) {
   for (var j = 0; j < matrizA.length; j++) {
@@ -37,3 +48,23 @@ for (var i = 0; i < matrizA.length; i++) {
   }
   // i++
 }
+
+// SUMA
+console.log("matrizA: ", matrizA);
+console.log("matrizB: ", matrizB);
+for (var i = 0; i < matrizA.length; i++) {
+    for (var j = 0; j < matrizA.length; j++) {
+      matrizC[i][j] = matrizA[i][j] + matrizB[i][j];
+    }
+}
+console.log("matrizC (suma): ", matrizC);
+
+// RESTA
+console.log("matrizA: ", matrizA);
+console.log("matrizB: ", matrizB);
+for (var i = 0; i < matrizA.length; i++) {
+    for (var j = 0; j < matrizA.length; j++) {
+      matrizD[i][j] = matrizA[i][j] + matrizB[i][j];
+    }
+}
+console.log("matrizD (resta): ", matrizD);
