@@ -191,8 +191,41 @@ git stash
 git stash pop
 ```
 
-### Áreas de estudio
+### Conventional Commits
 
+Es una especificación sobre como escribir mensajes de confirmación (commits).
+
+**Estructura**
+
+```
+<type>[optional scope]: <description>
+
+[optional body]
+
+[optional footer(s)]
+```
+
+**Tipos principales**
+
+* feat: Nuevas caracteristicas.
+* chore: Cosas que no aportan un req funcional pero posiblemente si un req no funcional.
+* fix: Correccion de errores.
+* docs: Commits con documentacion o comentarios.
+* style: Estructura de carpetas y nombrado
+
+[más info](https://www.conventionalcommits.org/en/v1.0.0/)
+
+### VSCode como editor de git
+
+```
+git config --global core.editor"visual studio --wait"
+git commit 
+// ir a vscode a escribir el mensaje, una vez escrito guardar y cerrar.
+// regresar a la consola a comprobar el commit
+```
+
+
+### Áreas de estudio
 
 #### Ingeniería de software
 
@@ -232,6 +265,10 @@ Entre menos entendemos un producto, tendrá mayores errores.
 * TDD.
 * BDD.
 
+#### **Introducción a la lógica de programación**
+
+Lenguaje natural, diagramas de flujo, pseudocodigo, pruebas de escritorio, etc.
+
 ### Herramientas
 
 #### Diseñar diagramas
@@ -250,3 +287,29 @@ Entre menos entendemos un producto, tendrá mayores errores.
 #### Otras herramientas online
 
 [Gitignore generator](https://www.toptal.com/developers/gitignore)
+
+#### **Redes sociales para estudiar**
+
+##### Plataformas de aprendizaje
+
+* [SoloLearn.](https://www.sololearn.com/)
+* [TutorialesYa.](https://www.tutorialesprogramacionya.com/)
+* [W3Schools.](https://www.w3schools.com/)
+* [Mozilla Developer Network.](https://developer.mozilla.org/es/)
+
+##### Youtube
+
+* [Carlos Azaustre.](https://www.youtube.com/c/CarlosAzaustre)
+* [Fazt.](https://www.youtube.com/c/FaztTech)
+* [Absolute.](https://www.youtube.com/c/AbsoluteSite)
+* [MidudeDev](https://www.youtube.com/c/midudev).
+* [CodelyTV.](https://www.youtube.com/c/CodelyTv)
+
+##### Redes sociales
+
+* [Carlos Azaustre.](https://www.instagram.com/carlosazaustre/?hl=es)
+* [EdTeam.](https://www.instagram.com/edteamlat/?hl=es)
+* [Richwebdeveloper.](https://www.instagram.com/richwebdeveloper/?hl=es)
+* [Vertechie](https://www.instagram.com/veritechie/?hl=es).
+* [AnnCode](https://www.instagram.com/anncode/?hl=es).
+* [Manz.](https://twitter.com/Manz)
