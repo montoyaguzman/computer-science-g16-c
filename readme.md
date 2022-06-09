@@ -184,6 +184,9 @@ git branch -D nombreRama
 # actualiza la cache de git para que tome ciertos cambios (.gitignore)
 git rm --cached . r
 
+# actualiza el mensaje del ultimo commit realizado (no debe estar pusheado)
+git commit --amend -m "an updated commit message"
+
 # stash
 git stash
 
