@@ -20,11 +20,11 @@ numeros.map(element => {
     break; // rompe la ejecucion de un ciclo
   }
   console.log(element);
-})
+});
 
 numeros.forEach(element => {
   if (element >= 40) {
     break; // rompe la ejecucion de un ciclo
   }
   console.log(element);
-})
+});
