@@ -40,3 +40,12 @@ console.log(numeros);
 // inicializacion de variable
 // let numero  = 2;
 
+
+// Esto genera un error ReferenceError: Cannot access 'suma' before initialization 
+// debido a que las funciones flechas no realizan hostoing
+
+// console.log(suma(10, 20));
+// const suma = (num1, num2) => {
+//   return num1 + num2;
+// }
+
