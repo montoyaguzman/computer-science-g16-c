@@ -27,14 +27,19 @@ formElement.addEventListener('submit', (event) => {
         status: statusText,
     };
     languages.push(language);
+    cleanView();
     renderListLanguages(languages);
 });
+
+const cleanView = () => {
+    ulElement.innerHTML = '';
+}
 
 const renderListLanguages = (languages) => {
     languages.forEach(renderElementList);
 };
 
-const renderElementList = () => {
+const renderElementList = (element, index) => {
     // creación de los elementos HTML
     const liElement = document.createElement('li');
     const divElement = document.createElement('div');
@@ -46,9 +51,9 @@ const renderElementList = () => {
     setIconType();
     buttonElement.classList.add('bi', 'bi-trash3-fill', 'text-danger');
     buttonElement.setAttribute('type', 'submit');
-    buttonElement.setAttribute('index', '0');
+    buttonElement.setAttribute('index', index);
     // agregar texto a un elemento
-    liElement.innerHTML = 'Lenguaje ejemplo';
+    liElement.innerHTML = element.description;
     // agregar al html
     ulElement.appendChild(liElement);
     liElement.appendChild(divElement);
