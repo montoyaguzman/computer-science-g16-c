@@ -69,6 +69,11 @@ const renderElementList = (element, index) => {
 };
 
 const setIconType = (iElement, status) => {
+    
+    // const STAND_BY = STATUS.STAND_BY;
+    // const START = STATUS.START;
+    // const FINISHED = STATUS.FINISHED;
+    // destructuring
     const { STAND_BY, START, FINISHED } = STATUS;
     iElement.classList.add('bi', 'bi-pause-circle-fill');
     if (status === STAND_BY) {
