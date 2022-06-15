@@ -36,6 +36,7 @@ formElement.addEventListener('submit', (event) => {
     languages.push(language);
     cleanView();
     renderListLanguages(languages);
+    renderTotal();
 });
 
 const cleanView = () => {
@@ -59,6 +60,7 @@ const renderElementList = (element, index) => {
     buttonElement.classList.add('bi', 'bi-trash3-fill', 'text-danger');
     buttonElement.setAttribute('type', 'submit');
     buttonElement.setAttribute('index', index);
+    buttonElement.addEventListener('click', handleDelete);
     // agregar texto a un elemento
     liElement.innerHTML = element.description;
     // agregar al html
@@ -69,7 +71,6 @@ const renderElementList = (element, index) => {
 };
 
 const setIconType = (iElement, status) => {
-    
     // const STAND_BY = STATUS.STAND_BY;
     // const START = STATUS.START;
     // const FINISHED = STATUS.FINISHED;
@@ -85,4 +86,56 @@ const setIconType = (iElement, status) => {
     }
 };
 
+const handleDelete = (event) => {
+    const positionStr = event.target.getAttribute('index'); // user getAttribute for custom attributes
+    const position = parseInt(positionStr);
+    languages.splice(position, 1);
+    cleanView();
+    renderListLanguages(languages);
+    renderTotal();
+}
 
+const renderTotal = () => {
+    const totalElement = document.querySelector('#language-all');
+    const completeElement = document.querySelector('#language-complete');
+    const pendingElement = document.querySelector('#language-pending');
+    totalElement.innerHTML = languages.length;
+    completeElement.innerHTML = getTotalComplete(languages);
+    pendingElement.innerHTML = getTotalPendings(languages);
+}
+
+const getTotalComplete = (languages) => {
+    const { FINISHED } =  STATUS;
+    const completeds = languages.filter(element => element.status === FINISHED);
+    return completeds.length;
+}
+
+const getTotalPendings = (languages) => {
+    const { STAND_BY, START } =  STATUS;
+    const completeds = languages.filter(element => element.status === STAND_BY || element.status === START);
+    return completeds.length;
+}
+
+// const getTotalPendingsFor = (languages) => {
+//     const { STAND_BY, START } =  STATUS;
+//     let occurences = 0;
+//     for (let i=0; i<languages.length; i++) {
+//         if (languages[i].status === STAND_BY || languages[i].status === START) {
+//             occurences++;
+//         }
+//     }
+//     return occurences;
+// }
+
+// const getTotalPendingsWhile = (languages) => {
+//     const { STAND_BY, START } =  STATUS;
+//     let occurences = 0;
+//     let i=0;
+//     while (i<languages.length) {
+//         if (languages[i].status === STAND_BY || languages[i].status === START) {
+//             occurences++;
+//         }
+//         i++;
+//     }
+//     return occurences;
+// }
