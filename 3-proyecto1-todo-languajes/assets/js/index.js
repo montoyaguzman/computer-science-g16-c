@@ -24,7 +24,10 @@ formElement.addEventListener('submit', (event) => {
     const statusElement = Array.from(radiosNodeList).find(element => element.checked);
     // const radioList =  Array.from(radiosNodeList);
     // const statusElement = radioList.find(element => element.checked);
-
+    debugger
+    if (!languageInputElement?.value || !statusElement?.value) {
+        return;
+    }
     // obtener los value de los elementos html
     const languageText = languageInputElement.value;
     const statusText = statusElement.value;
