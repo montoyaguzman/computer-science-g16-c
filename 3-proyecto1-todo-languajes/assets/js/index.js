@@ -2,6 +2,11 @@
 // getElementById
 // getElementByClassName
 // getElementByTagName
+const STATUS = {
+    STAND_BY: 'standBy',
+    START: 'start',
+    FINISHED: 'finished'
+};
 const ulElement = document.querySelector('#list-languages');
 const formElement = document.querySelector('#language-form');
 let languages = [];
@@ -17,6 +22,8 @@ formElement.addEventListener('submit', (event) => {
     const languageInputElement = event.target.languageElement;
     const radiosNodeList = event.target.statusRadioElement;
     const statusElement = Array.from(radiosNodeList).find(element => element.checked);
+    // const radioList =  Array.from(radiosNodeList);
+    // const statusElement = radioList.find(element => element.checked);
 
     // obtener los value de los elementos html
     const languageText = languageInputElement.value;
@@ -48,7 +55,7 @@ const renderElementList = (element, index) => {
     // agregar las clases css a los elementos 
     liElement.classList.add('list-group-item', 'd-flex', 'justify-content-between');
     // agregar tipo de icono
-    setIconType();
+    setIconType(iElement, element.status);
     buttonElement.classList.add('bi', 'bi-trash3-fill', 'text-danger');
     buttonElement.setAttribute('type', 'submit');
     buttonElement.setAttribute('index', index);
@@ -61,8 +68,16 @@ const renderElementList = (element, index) => {
     divElement.appendChild(buttonElement);
 };
 
-const setIconType = () => {
-
+const setIconType = (iElement, status) => {
+    const { STAND_BY, START, FINISHED } = STATUS;
+    iElement.classList.add('bi', 'bi-pause-circle-fill');
+    if (status === STAND_BY) {
+        iElement.classList.add('text-warning');
+    } else if (status === START) {
+        iElement.classList.add('text-primary');
+    } else if (status === FINISHED) {
+        iElement.classList.add('text-success');
+    }
 };
 
 
