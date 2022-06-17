@@ -23,7 +23,9 @@ const normalizePokemonData =  (name, imgResponseJson) => {
 };
 
 const renderCardPokemon = (element, index) => {
-    console.log('element: ', element);
+    
+    console.log('element: ', element, index);
+    
     const cardPokemonDiv = document.createElement('div');
     const pokemonImg = document.createElement('img');
     const brElement = document.createElement('br');
@@ -34,6 +36,9 @@ const renderCardPokemon = (element, index) => {
     pokemonImg.setAttribute('src', element.img);
     pokemonImg.setAttribute('alt', NOT_IMAGE_TEXT);
 
+    const mainDiv = document.querySelector('#container-pokemons');
+    mainDiv.appendChild(cardPokemonDiv);
+    
     cardPokemonDiv.appendChild(pokemonImg);
     cardPokemonDiv.appendChild(brElement);
     cardPokemonDiv.appendChild(pokemonNameSpan);
@@ -46,18 +51,14 @@ const renderPokemons = (pokemons) => {
     pokemons.forEach(renderCardPokemon);
 }
 
-console.log('paso 1');
-getPokemons();
-console.log('paso 3');
-console.log('4 pokemons => ', pokemons);
-renderPokemons(pokemons);
-console.log('paso 6');
-
-
-// async function main() {
-//     await getPokemons();
-//     renderPokemons(pokemons);
-// }
-// main();
+async function main() {
+    console.log('paso 1');
+    await getPokemons();
+    console.log('paso 3');
+    console.log('4 pokemons => ', pokemons);
+    renderPokemons(pokemons);
+    console.log('paso 6');
+}
+main();
 
 
