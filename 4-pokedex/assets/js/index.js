@@ -1,6 +1,29 @@
 const mainDiv = document.querySelector('#container-pokemons');
+const seachElement = document.querySelector('#search');
 const NOT_IMAGE_TEXT = 'la imagen del pokemon';
 let globalPokemons = [];
+
+const cleanView = () => {
+    mainDiv.innerHTML = '';
+}
+
+const searchWithFilter = (searchingText) => {
+    const filteredPokemon = globalPokemons.filter((pokemon) => {
+        const { name } = pokemon;
+        if (name.includes(searchingText)) {
+            return pokemon;
+        }
+    });
+    return filteredPokemon;
+}
+
+seachElement.addEventListener('keyup', (event) => {
+    const inputText = event?.target?.value || '';
+    let pokemosGlobal2 =  [ ...globalPokemons ]; // globalPokemons.slice(0, globalPokemons.length)
+    pokemosGlobal2 = searchWithFilter(inputText);
+    cleanView();
+    renderPokemons(pokemosGlobal2);
+});
 
 const getPokemons = async () => {
     // fetch('https://pokeapi.co/api/v2/pokemon/', { method: 'GET' })
