@@ -80,12 +80,19 @@ body {
     height: 40px;
 }
 
+.search-bar {
+    display: flex;
+    justify-content: center;
+}
+
 .pokemon-list {
     display: grid;
     grid-template-areas: "div div div div div div"
         "div div div div div div";
-    min-height: 70vh;
+    height: 50vh;
     padding: 8vh;
+    overflow-y: scroll;
+    border: 1px solid rgb(0, 0, 0);
 }
 
 .footer {
