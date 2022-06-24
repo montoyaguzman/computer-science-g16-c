@@ -123,6 +123,51 @@ Es el estándar que la empresa del mismo nombre definió para JavaScript en el a
 * Delete, type of, instanceof.
 * Destructuring.
 
+## Protototipos y Programación orientada a objetos
+
+### Intro
+
+**Tipos de datos en programación (agnóstico del lenguaje)**
+
+* Boolean.
+* String.
+* Array.
+* Objetos.
+* Numeros.
+* Numeros decimales.
+
+**Fuerte y debilmente tipado**
+
+```
+// debilmente tipado JS
+let numero = 10
+let numero2 = 99.7
+numero = "este es numero"
+```
+
+```
+// fuertemente tipado Java
+int numero = 10;
+double numero2 = 99.7
+numero = "este es numero" // error
+```
+
+**Jerga de objetos**
+
+// json => key: value
+{
+    "person": {
+        name: "jose m"
+    }
+}
+
+// objeto js => propiedad y valor
+const person = {
+    name: "jose m"
+}
+
+// poo => atributos y valor
+
 ### Prototype
 
 Los **prototipos** son un mecanismo mediante el cual los objetos en JavaScript heredan características entre sí. Funcionan para **proporcionar mecanismos de herencia.**
@@ -139,7 +184,7 @@ Es un paradigma de programación centrado en:
 
 * Plantillas base (clases). => **Auto**
 * Objetos, son elementos concretos de una clase.=> **mazda, tsuru**
-* Atributos/Propiedades: Son las caracteristicas de los objetos. => **color, dimensiones, modelo**
+* Atributos/Propiedades: Son las caracteristicas de los objetos. => **color, dimensiones, modelo**.
 * Métodos/Funciones: Son las acciones puede realizar un objeto. => arranca(), frena().
 
 #### Formas de crear objetos en JS
@@ -361,7 +406,7 @@ git stash
 git stash pop
 ```
 
-### Conventional Commits
+#### Conventional Commits
 
 Es una especificación sobre como escribir mensajes de confirmación (commits).
 
@@ -385,7 +430,7 @@ Es una especificación sobre como escribir mensajes de confirmación (commits).
 
 [más info](https://www.conventionalcommits.org/en/v1.0.0/)
 
-### VSCode como editor de git
+#### VSCode como editor de git
 
 ```
 git config --global core.editor"visual studio --wait"
