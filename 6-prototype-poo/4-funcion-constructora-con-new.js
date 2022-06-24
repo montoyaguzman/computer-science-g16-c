@@ -1,7 +1,22 @@
+function createPersona(name, altura, colorPiel) {
+    this.name = name;
+    this.altura = altura;
+    this.colorPiel = colorPiel;
+};
+
 function createSuperHumano(superpoder, tipo, alias) {
     this.superpoder = superpoder;
     this.tipo = tipo;
     this.alias = alias;
+};
+
+function createPanadero(isComerciante, hasMandil) {
+    this.isComerciante = isComerciante;
+    this.hasMandil = hasMandil;
+};
+
+createSuperHumano.prototype.volar = () => {
+    console.log('volar');
 };
 
 const flash = new createSuperHumano("super velocidad", "super heroe", "flash");
