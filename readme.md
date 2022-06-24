@@ -123,17 +123,15 @@ Es el estándar que la empresa del mismo nombre definió para JavaScript en el a
 * Delete, type of, instanceof.
 * Destructuring.
 
-
 ### Prototype
 
-Los **prototipos** son un mecanismo mediante el cual los objetos en JavaScript heredan características entre sí. Funcionan para **proporcionar mecanismos de herencia.** 
+Los **prototipos** son un mecanismo mediante el cual los objetos en JavaScript heredan características entre sí. Funcionan para **proporcionar mecanismos de herencia.**
 
 Los objetos pueden tener un  **objeto prototipo** , el cual actúa como un objeto plantilla que hereda métodos y propiedades.
 
 **Cadena de Prototipos**
 
 Un objeto prototipo del objeto puede tener a su vez otro objeto prototipo, el cual hereda métodos y propiedades, y así sucesivamente. Esto es conocido con frecuencia como la **cadena de prototipos**.
-
 
 ### POO
 
@@ -494,7 +492,6 @@ Lenguaje natural, diagramas de flujo, pseudocodigo, pruebas de escritorio, etc.
 * [TutorialesYa.](https://www.tutorialesprogramacionya.com/)
 * [W3Schools.](https://www.w3schools.com/)
 * [Mozilla Developer Network.](https://developer.mozilla.org/es/)
-* [W3Schools.](https://www.w3schools.com/)
 
 ##### Youtube
 
