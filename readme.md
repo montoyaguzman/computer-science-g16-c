@@ -154,6 +154,9 @@ numero = "este es numero" // error
 
 **Jerga de objetos**
 
+clase = prototipo = plantilla = modelos
+objeto concreto = instancia = miembro = variable miembro
+
 // json => key: value
 {
     "person": {
