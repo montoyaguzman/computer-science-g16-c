@@ -22,3 +22,8 @@ const person = {
 person.sayHello();
 const accion = person.sayHello();
 accion();
+
+// JS ES 5
+// 'use strict'
+// ES6-ESn
+// TS  
