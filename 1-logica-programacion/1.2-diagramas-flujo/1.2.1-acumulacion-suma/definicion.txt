@@ -1,0 +1,27 @@
+1. Acumulacion suma
+
+Con base en tener el numero 1 como inicio y recibir un numero
+para sumarlo al inicio y obtener el final, calcular la suma
+de todos los numero que se encuentran enmedio.
+
+INICIO => 1
+USUARIO INGRESABA => 9
+SUMA es desde 1... 10
+1 + 2 + 3... + 10 = 
+
+INICIO => 1
+USUARIO INGRESABA => 7
+SUMA es desde 1 - 8
+1 + 2 + 3... + 8 = 
+
+INICIO => 1
+USUARIO INGRESABA => 3
+SUMA es desde 1 - 4
+1 + 2 + 3 + 4 =
+
+
+1 + 2 + 3 + 4 + 5 + 6 = 21
+1 + 2
+resultado + 3
+resultado + 4
+resultado + 5

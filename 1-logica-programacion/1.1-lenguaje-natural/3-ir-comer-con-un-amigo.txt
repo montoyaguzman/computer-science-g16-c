@@ -1,0 +1,73 @@
+Definición
+Ir a comer con un amigo en un restaurante.
+
+
+1. Contactar a mi amigo
+2. Preguntarle si quiere ir a comer a un restaurante
+3. Si su respuesta es si, ponerse de acuerdo para comer // si es no, buscar otro amigo que quiera
+4. Elegir restaurante  
+5. Acordar la fecha y hora 
+6. Ir al restaurante en la fecha y hora acordadas
+** Encontrar/ubicar/verlo a mi amigo **
+7. Saludar a mi amigo
+8. Entrar al restaurante
+9. Buscar una mesa
+10. Sentarse con el amigo
+11. Ordenar la comida
+12. Comer 
+13. Pagar la cuenta
+14. Salir del restaurante
+15. Despedirse del amigo
+16. Regresar a casa
+
+
+1.-¿Quiero ir?{ 
+no:si:
+no--> ¿es muy amigo mio?:si:no:
+no-->no voy-->Fin
+si-->
+2.-Debo ir
+}
+3.-¿tienes tiempo?si:no:
+no-->fin
+si-->
+4.-tienes dinero?:si:no
+no-->hablar con el-->decirle que no voy.
+si:-->
+5.-Preguntarle a donde quiere ir:
+6.-El lugar me gusta?si:no:
+No-->proponer otro lugar
+sí-->
+7.-Proponer el día y la hora
+8.-Ir a comer:
+** encontrar a mi amigo **
+9.-Ya en el restaurante elegir comida
+10.-Elegir bebida
+11.-Echar chisme
+12.-Disfrutar el momento.
+
+
+¿Tengo hambre? No/Sí
+¿Quiero salir a comer? No/Sí
+¿Quiero ir a comer solo? No/Sí
+¿A cuál amigo llamo? A/B/C
+Preguntar disponibilidad a amigo B
+Decidir cuál restaurante A/B/C
+Decidir hora de encuentro
+Reservar mesa
+Bañarse
+Vestirse
+Tomar cartera y llaves
+Salir de casa
+Conducir hasta el restaurante
+Esperar amigo B
+Entrar juntos a restaurante
+Ordenar la comida
+Esperar la comida
+Comer la comida
+11.-Echar chisme
+12.-Disfrutar el momento.
+13. Pagar la cuenta
+14. Salir del restaurante
+15. Despedirse del amigo
+16. Regresar a casa
